@@ -4,17 +4,16 @@ p:last-of-type{
 }
 input:valid{
   color: lightgreen;
-  font-style: initial;
   font-size: xx-small;
 }
 
 label:first-of-type {
-  color: coral;
-}
-
-input:dir(rtl) + label:first-of-type {
-  color: lightskyblue;
-  font-size: x-large;
+  color: purple;
 }
 
 :lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+
+em:first-of-type{
+  color: darkslateblue;
+  font-weight: 600;
+}
