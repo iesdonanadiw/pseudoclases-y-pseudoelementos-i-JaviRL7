@@ -6,22 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pseudoelementos</title>
     <style>
-      p:first-line {
+      p::first-line {
         font-size: 1.5em;
+        
       }
-      h1:first-letter {
+      h1::first-letter {
         font-size: 1.5em;
         color: red;
       }
-      h1:before {
+      h1::before {
         content: "Apartado - ";
       }
-      h1:after {
+      h1::after {
         content: " - ";
       }
-      h2:before {
-        content: url(icono.png);
+      h2::before {
+        content: "*"
       }
+      p.capital::first-letter{
+          color: red;     
+          font-size: xx-large;
+        }
+      p.negrita::first-line{
+        font-weight: bold;
+      }
+      li::marker{
+        color: red;
+      }
+      
     </style>
   </head>
   <body>
@@ -29,14 +41,14 @@
       <!-- TODO: Añade después del h1 un guión con espacios y antes del h2 un * -->
       <!-- TODO: Cuando el usuario selecciona el texto se debe mostrar un fondo amarillo y las letras en rojo -->
       <h1>Selecciona algo de texto de la página:</h1> 
-
+      
       <h2>Esto es una cabecera h2</h2>
       
       <!-- TODO: Establece la primera letra del siguiente texto de color rojo y de tamaño 'xx-large' -->
       <p class="capital">You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
 
       <!-- TODO: Establece la primera línea del siguiente texto en negrita. -->
-      <p>
+      <p class="negrita">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, non
         labore volup atibus perferendis tempora modi. Veritatis beatae, ullam
         labore quia nostrum eum cum. Asperiores veritatis, repellendus i sam
